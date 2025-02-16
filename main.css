@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background-color: hsl(204, 43%, 93%);
+  font-family: karla;
+  padding-bottom: 2rem;
+}
+
+.main {
+  width: 16rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.card_one {
+  margin: 1rem;
+  padding-top: 1px;
+
+  h4 {
+    color: hsl(179, 62%, 43%);
+    font-size: 14px;
+  }
+
+  h5 {
+    color: hsl(71, 73%, 54%);
+    font-size: 13px;
+  }
+
+  p {
+    color: hsl(218, 22%, 67%);
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+
+.card_two {
+  margin: 0;
+  background-color: hsl(179, 62%, 43%);
+  border-end-end-radius: 7px;
+  border-end-start-radius: 7px;
+
+  .card_min_one {
+    margin: 1rem;
+    padding-top: 1px;
+
+    h5 {
+      color: hsl(204, 43%, 93%);
+      font-size: 14px;
+    }
+
+    .span_para {
+      color: hsl(207, 15%, 74%);
+      font-size: 12px;
+
+      span {
+        color: hsl(204, 43%, 93%);
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      color: hsl(204, 43%, 93%);
+      font-size: 12px;
+    }
+
+    button {
+      background-color: hsl(71, 73%, 54%);
+      width: 90%;
+      margin: auto;
+      height: 35px;
+      border: none;
+      border-radius: 5px;
+      color: hsl(204, 43%, 93%);
+    }
+  }
+
+  .card_min_two {
+    background-color: hsl(179, 58%, 58%);
+    padding: 1px 1rem;
+    border-end-end-radius: 7px;
+    border-end-start-radius: 7px;
+
+    h5 {
+      color: hsl(204, 43%, 93%);
+      font-size: 14px;
+    }
+
+    p {
+      color: hsl(204, 43%, 93%);
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .main {
+    width: 31rem;
+    margin-top: 10%;
+  }
+
+  .card_one {
+    p {
+      margin-right: 3rem;
+    }
+  }
+
+  .card_two {
+    display: flex;
+
+    .card_min_one {
+      width: 50%;
+    }
+
+    .card_min_two {
+      width: 50%;
+
+      p {
+        line-height: 7px;
+      }
+    }
+  }
+}
